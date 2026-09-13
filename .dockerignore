@@ -1,0 +1,48 @@
+# Git и система контроля версий
+.git
+.gitignore
+.github
+
+# Виртуальные окружения (Poetry создает окружение сам внутри контейнера)
+.venv
+venv
+env
+ENV
+
+# Файлы конфигурации и секреты (должны передаваться через env-переменные)
+.env
+*.env
+.secrets
+
+# Кэш Python и временные файлы编译
+**/__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.cache
+.mypy_cache
+.ruff_cache
+.pylintdb
+
+# Файлы настроек IDE и редакторов
+.idea
+.vscode
+*.swp
+*.swo
+
+# Логи и базы данных (если они создаются локально)
+*.log
+*.sqlite3
+*.db
+
+# Статика и медиа (если они собираются отдельно или монтируются через volumes)
+media/
+staticfiles/
+
+# Документация и тесты (опционально, если не нужны в прод-контейнере)
+docs/
+tests/
+htmlcov/
+.coverage
+test_db.sqlite3
