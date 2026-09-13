@@ -1,9 +1,9 @@
 [project]
-name = "project12-skypro-django-drf"
+name = "lms-api"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Your Name",email = "you@example.com"}
+    {name = "Margarita Bursheva",email = "mbursheva@mail.ru"}
 ]
 readme = "README.md"
 requires-python = ">=3.13,<4.0"

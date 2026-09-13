@@ -17,6 +17,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Копируем файл с зависимостями Python
 COPY requirements.txt .
 
+# Принудительно обновляем pip перед установкой
+RUN pip install --no-cache-dir --upgrade pip
+
 # Устанавливаем зависимости
 RUN pip install --no-cache-dir -r requirements.txt
 
